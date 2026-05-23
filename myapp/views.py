@@ -1,13 +1,9 @@
 from django.shortcuts import render
 from .models import Category, Product
 
-def Home(request):
-    return render(request, " Home.html")
-
-
 def home(request):
-    categories = Category.objects.all()
-    return render(request, "Home.html", {"categories": categories})
+    return render(request, " home.html")
+
 
 
 from django.shortcuts import render
